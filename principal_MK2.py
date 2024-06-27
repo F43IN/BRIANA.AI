@@ -6,7 +6,7 @@ from bs4 import BeautifulSoup
 from gtts import gTTS
 import webbrowser as browser
 
-openai.api_key = "enterYourAPIKey"
+openai.api_key = "enterYourAPIKey" #use your openai api key
 
 hotword = "briana"
 
@@ -40,7 +40,7 @@ def resp(arq):
 
 def cria_audio(mensagem):
     tts = gTTS(mensagem, lang="pt-br")
-    tts.save("C:/Users/yourUserName/BRIANA/resp_din.mp3")
+    tts.save("C:/Users/yourUserName/BRIANA/resp_din.mp3")   #replace 'yourUseName' with your username 
     playsound("C:/Users/yourUserName/BRIANA/resp_din.mp3")
 
 def exe_com(trigger):
@@ -74,7 +74,7 @@ def denada():
 
 def musica():
     resp("resposta_5")
-    browser.open("https://open.spotify.com/intl-pt/track/2iNQ124Rh953SjXTSZhuLd?si=1fc2f475198e4b19")
+    browser.open("sptifyLink")
     
 
 #####__FUNÇÃO_PRINCIPAL__#####
